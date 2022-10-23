@@ -5,6 +5,7 @@ public abstract class Task2MarksSuper {
     'Marks' with an abstract method 'getPercentage' that will be returning the average percentage of marks. Provide
 implementation of abstract method in classes 'A' and 'B'. The constructor of student A takes the marks in three subjects
 as its parameters and the marks in four subjects as its parameters for student B. Test your code*/
+
     int math;
     int reading;
     int English;
@@ -39,3 +40,4 @@ class tester32{
         new B(55,50,35,45).getPercentage();
     }
 }
+//comment
