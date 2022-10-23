@@ -1,6 +1,6 @@
 package GroupProject2;
 
-public abstract class MarksTask2Super {
+public abstract class Task2MarksSuper {
     /*We have to calculate the average of marks obtained in three subjects by student A and by student B. Create class
     'Marks' with an abstract method 'getPercentage' that will be returning the average percentage of marks. Provide
 implementation of abstract method in classes 'A' and 'B'. The constructor of student A takes the marks in three subjects
@@ -8,14 +8,14 @@ as its parameters and the marks in four subjects as its parameters for student B
     int math;
     int reading;
     int English;
-    MarksTask2Super(int math, int reading, int English){
+    Task2MarksSuper(int math, int reading, int English){
         this.math=math;
         this.reading=reading;
         this.English=English;
     }
     abstract void getPercentage();
 }
-class A extends MarksTask2Super {
+class A extends Task2MarksSuper {
     A(int math,int reading,int English){
         super(math,reading,English);
     }
@@ -23,7 +23,7 @@ class A extends MarksTask2Super {
         System.out.println("Everage score of class A is "+(math+reading+English)/3);
     }
 }
-class B extends MarksTask2Super {
+class B extends Task2MarksSuper {
     int Spanish;
    B(int math,int reading,int English, int Spanish){
        super(math,reading,English);

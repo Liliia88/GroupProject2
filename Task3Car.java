@@ -1,5 +1,5 @@
 package GroupProject2;
-public class CarTask3 {
+public class Task3Car {
     /*Create a Class Car that would have the following fields: carPrice and color and method
 calculateSalePrice() which should be returning a price of the car.Create 2 sub classes: Sedan and Truck. The Truck
 class has a field as weight and has its own implementation of calculateSalePrice() method in which returned price is
@@ -10,7 +10,7 @@ calculated as following: if weight>2000 then returned price car should include 1
     return(carPrice);
     }
 }
-class Truck extends CarTask3{
+class Truck extends Task3Car {
  double weight;
  String calculateSaleprice(){
      if (weight>2000){
@@ -20,7 +20,7 @@ class Truck extends CarTask3{
      }
  }
 }
-class Sedan extends CarTask3 {
+class Sedan extends Task3Car {
     double length;
     String calculateSaleprice(){
         if (length>20){
