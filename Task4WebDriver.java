@@ -86,6 +86,5 @@ class FirefoxDriver implements RemoteWebdriver{
          System.out.println(safari.getTitle());
          safari.navigate();
          safari.getScreenshot();
-//comments
      }
  }
