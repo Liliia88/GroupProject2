@@ -40,4 +40,3 @@ class tester32{
         new B(55,50,35,45).getPercentage();
     }
 }
-//comment
