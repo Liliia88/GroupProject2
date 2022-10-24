@@ -68,7 +68,7 @@ class FirefoxDriver implements RemoteWebdriver{
 
  class tester30 {
      public static void main(String[] args) {
-         ChromeDriver chrome=new ChromeDriver();
+         /*ChromeDriver chrome=new ChromeDriver();
          chrome.open();
          chrome.close();
          System.out.println(chrome.getTitle());
@@ -85,7 +85,16 @@ class FirefoxDriver implements RemoteWebdriver{
          safari.close();
          System.out.println(safari.getTitle());
          safari.navigate();
-         safari.getScreenshot();
+         safari.getScreenshot();*/
+
+         RemoteWebdriver[] remote={new ChromeDriver(),new FirefoxDriver(),new SafariDriver()};
+         for (RemoteWebdriver r:remote){
+             r.open();
+             r.close();
+             System.out.println(r.getTitle());
+             r.navigate();
+
+         }
      }
  }
- 
+
