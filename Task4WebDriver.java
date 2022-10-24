@@ -93,6 +93,8 @@ class FirefoxDriver implements RemoteWebdriver{
              r.close();
              System.out.println(r.getTitle());
              r.navigate();
+
+             //comment
          }
      }
  }
