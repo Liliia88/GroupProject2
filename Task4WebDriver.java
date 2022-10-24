@@ -88,3 +88,4 @@ class FirefoxDriver implements RemoteWebdriver{
          safari.getScreenshot();
      }
  }
+ 
